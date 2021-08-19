@@ -1,6 +1,4 @@
-
 {% extends 'blog/base.html' %}
-
 
 {% block content %}
     {% for post in posts %}
@@ -13,4 +11,4 @@
             <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
         </div>
     {% endfor %}
-{% endblock %}
+{% endblock content %}
